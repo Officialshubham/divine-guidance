@@ -1,4 +1,4 @@
-let isDarkMode = false;
+let isDarkMode = true;
 
 // Function to toggle between light and dark themes
 function toggleTheme() {
