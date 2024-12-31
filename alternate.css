@@ -54,6 +54,23 @@ header {
     padding-top: 3rem; /* Add space for the absolute positioned button */
 }
 
+.header-content h1 {
+    text-align: center;
+    flex-grow: 1; /* Center the heading */
+}
+
+.header-content .back-to-home-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header-content .material-switch {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 /* Material UI Toggle Switch - Same as index page */
 .material-switch {
     position: relative;
@@ -149,14 +166,12 @@ main {
     border-radius: 5px;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
 }
 
 .back-to-home-btn:hover {
     background-color: #45a049;
 }
-
-
 
 /* .image-container {
     margin: 2rem 0;
@@ -347,35 +362,7 @@ footer p {
         padding: 1.5rem;
     }
     
-    .content h2 {
-        font-size: 1.75rem;
-    }
-    
-    .content p {
-        font-size: 1rem;
-    }
-}
-
-/* Add media queries for responsive layout */
-@media (max-width: 768px) {
-    .header-content {
-        padding-top: 4rem; /* Increase padding for mobile */
-    }
-    
-    h1 {
-        font-size: 1.5rem; /* Reduce heading size on mobile */
-        width: 100%; /* Full width for better alignment */
-        text-align: center;
-    }
-
-    .material-switch {
-        margin-left: auto; /* Push switch to the right */
-    }
-}
-
-@media (max-width: 480px) {
-    .back-to-home-btn {
-        font-size: 12px;
-        padding: 6px 12px;
+    .header-content h1 {
+        font-size: 1.5rem;
     }
 }
