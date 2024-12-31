@@ -48,6 +48,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+    padding-top: 3rem; /* Add space for the absolute positioned button */
+}
+
+.header-content h1 {
+    text-align: center;
+    flex-grow: 1; /* Center the heading */
+}
+
+.header-content .back-to-home-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header-content .material-switch {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 /* Material UI Toggle Switch - Same as index page */
@@ -136,23 +157,21 @@ main {
 
 /* Style for the Back to Home button */
 .back-to-home-btn {
-    padding: 10px 20px;
-    background-color: #4CAF50; /* Green background */
+    padding: 8px 16px;
+    background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 5px;
-    margin-top: 10px; /* Adds some space from top */
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0;
+    left: 0;
 }
 
 .back-to-home-btn:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049;
 }
-
 
 /* .image-container {
     margin: 2rem 0;
@@ -343,11 +362,7 @@ footer p {
         padding: 1.5rem;
     }
     
-    .content h2 {
-        font-size: 1.75rem;
-    }
-    
-    .content p {
-        font-size: 1rem;
+    .header-content h1 {
+        font-size: 1.5rem;
     }
 }
