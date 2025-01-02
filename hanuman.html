@@ -34,6 +34,31 @@
 
         <div class="prayer-section">
             <h2>हनुमान चालीसा</h2>
+            <!-- <div class="audio-controls">
+                <button id="playButton">
+                    <i class="material-icons">play_arrow</i>
+                </button>
+            </div> -->
+            <div class="audio-controls">
+                <div class="audio-player">
+                    <button id="playButton">
+                        <i class="material-icons">Play</i>
+                    </button>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                        <input type="range" id="seekSlider" value="0">
+                    </div>
+                    <div class="time">
+                        <span id="currentTime">0:00</span> / 
+                        <span id="duration">0:00</span>
+                    </div>
+                    <div class="volume-control">
+                        <i class="material-icons">Volume</i>
+                        <input type="range" id="volumeSlider" min="0" max="100" value="100">
+                    </div>
+                </div>
+            </div>
+            <audio id="chalisaAudio" src="assets/audio/hanuman-chalisa.mp3"></audio>
             <div class="prayer-text">
                 <h3>दोहा</h3>
                 <p>श्रीगुरु चरन सरोज रज, निजमन मुकुरु सुधारि। बरनउं रघुबर बिमल जसु, जो दायक फल चारि।।</p>
@@ -95,5 +120,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/hanuman.js"></script>
 </body>
 </html>

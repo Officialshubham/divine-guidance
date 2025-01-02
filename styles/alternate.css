@@ -277,6 +277,84 @@ main {
     }
   }
 
+/* .audio-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.audio-controls button {
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+.audio-controls button:hover {
+    background: #e0e0e0;
+}
+*/
+.verse-active {
+    background-color: #45a049;
+    font-weight: 500;
+} 
+
+.audio-player {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.progress-bar {
+    flex: 1;
+    position: relative;
+    height: 4px;
+    background: #ddd;
+    border-radius: 2px;
+}
+
+.progress {
+    position: absolute;
+    height: 100%;
+    background: #2196F3;
+    border-radius: 2px;
+    width: 0;
+}
+
+input[type="range"] {
+    position: absolute;
+    width: 100%;
+    top: -6px;
+    height: 16px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.volume-control input[type="range"] {
+    width: 80px;
+    position: static;
+    opacity: 1;
+}
+
+.time {
+    font-size: 0.9rem;
+    min-width: 100px;
+}
+
 /* New styles for the prayer section */
 .prayer-section {
     background-color: var(--prayer-bg);
